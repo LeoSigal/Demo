@@ -7,6 +7,8 @@ import com.selectica.rcfutils.RCFBundleServiceHelper;
 import com.selectica.rcfutils.RCFBundleWrapper;
 import com.selectica.rcfutils.RCFServiceAPI;
 import com.selectica.rcfutils.RCFUserWrapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Created by vshilkin on 20/01/2015.
@@ -90,7 +92,9 @@ public class OnSaveTrigger extends AbstractDataWriteScript<Boolean> {
                 }
             }
         }
-        System.out.println("This is a demo!!!");
+        Logger logger = LoggerFactory.getLogger(OnSaveTrigger.class);
+        logger.info("Demo Message ###############++++++#############");
+        info.setName("Hello");
         return true;
     }
 }
