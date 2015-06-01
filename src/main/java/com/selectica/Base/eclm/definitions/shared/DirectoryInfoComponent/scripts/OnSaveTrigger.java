@@ -90,8 +90,8 @@ public class OnSaveTrigger extends AbstractDataWriteScript<Boolean> {
                 }
             }
         }
-        return true;
         System.out.println("This is a demo!!!");
+        return true;
     }
 }
 
